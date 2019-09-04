@@ -1,11 +1,34 @@
+@import './../../scss/abstracts/mixins';
+
 .photo {
   margin-bottom: 3rem;
 
-  &__img {
+  &__img, &__title {
     width: 22rem;
   }
 
-  &__title {
-    width: 22rem;
+  @include respond(big-desktop) {
+    &__img, &__title {
+      width: 19rem;
+    }
+  }
+
+  @include respond(tab-land) {
+    &__img, &__title {
+      width: 20rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    &__img, &__title {
+      width: 21rem;
+    }
+  }
+
+  @include respond(phone) {
+    &__img, &__title {
+      width: 23rem;
+    }
   }
 }
+
