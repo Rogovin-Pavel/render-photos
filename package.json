@@ -1,5 +1,6 @@
 {
   "name": "render-photos",
+  "homepage": "https://rogovin-pavel.github.io/render-photos/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
