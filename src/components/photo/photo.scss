@@ -34,7 +34,7 @@
 
   @include respond(phone) {
     &__img, &__title {
-      width: 22rem;
+      width: 20rem;
     }
   }
 
