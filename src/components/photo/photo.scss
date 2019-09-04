@@ -2,9 +2,16 @@
 
 .photo {
   margin-bottom: 3rem;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(black, .4);
+  transition: all .2s;
 
   &__img, &__title {
     width: 22rem;
+  }
+
+  &__title {
+    padding: 1rem;
   }
 
   @include respond(big-desktop) {
@@ -29,6 +36,10 @@
     &__img, &__title {
       width: 23rem;
     }
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
