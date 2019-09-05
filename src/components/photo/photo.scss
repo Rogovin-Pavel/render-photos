@@ -1,38 +1,51 @@
 @import './../../scss/abstracts/mixins';
 
 .photo {
-  margin-bottom: 3rem;
+  margin: 1rem;
   background-color: white;
   box-shadow: 0 2rem 4rem rgba(black, .4);
   transition: all .2s;
 
   &__img, &__title {
-    width: 22rem;
+    width: 16rem;
   }
 
   &__title {
     padding: 1rem;
   }
 
-  @include respond(big-desktop) {
-    &__img, &__title {
-      width: 19rem;
-    }
-  }
+  
 
-  @include respond(tab-land) {
+  @include respond(medium-desktop) {
+    margin: 1rem;
     &__img, &__title {
       width: 20rem;
     }
   }
 
+  @include respond(big-desktop) {
+    margin: 1rem;
+    &__img, &__title {
+      width: 25rem;
+    }
+  }
+
+  @include respond(tab-land) {
+    margin: 1rem;
+    &__img, &__title {
+      width: 17rem;
+    }
+  }
+
   @include respond(tab-port) {
+    margin: 1rem;
     &__img, &__title {
       width: 21rem;
     }
   }
 
   @include respond(phone) {
+    margin: 2rem;
     &__img, &__title {
       width: 20rem;
     }
